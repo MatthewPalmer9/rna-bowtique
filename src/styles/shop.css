@@ -1,0 +1,15 @@
+div.shop-container {
+    overflow-y: scroll;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 55px !important;
+    width: 100vw;
+    height: 79vh;
+    margin: 0 auto;
+}
+
+.cart-btn {
+    width: 100%;
+    margin: 0 auto;
+    background-color: gold;
+    border-radius: 5px;
+}
