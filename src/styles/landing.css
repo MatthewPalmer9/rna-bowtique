@@ -4,6 +4,17 @@ div.white-bg {
     border-radius: 10px;
 }
 
+.black-menu {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+    .black-menu:focus {
+        box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.6) !important;
+    }
+
+    .white-icon {
+        text-shadow: 2px 2px 0px black;
+    }
+
 .blur-in {
     box-shadow: 0px -20px 12px 0px white;
 }
