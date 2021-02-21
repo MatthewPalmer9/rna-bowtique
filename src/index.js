@@ -6,7 +6,9 @@ import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import reportWebVitals from './reportWebVitals';
 import manageProducts from './reducers/manageProducts';
+import './styles/sitewide.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../src/tailwind.output.css';
 
 const store = createStore(manageProducts, applyMiddleware(thunk))
 

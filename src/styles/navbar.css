@@ -1,0 +1,13 @@
+nav {
+    box-shadow: 0 0 20px -5px black;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px black;
+}
+
+nav.bg-pink {
+    background-color: rgba(255, 192, 203, 0.8) !important;
+}
+
+nav a {
+    color: white !important;
+}

@@ -1,3 +1,23 @@
-body {
-    padding-top: 56px;
+div.white-bg {
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 0 200px -80px black;
+    border-radius: 10px;
+}
+
+.blur-in {
+    box-shadow: 0px -20px 12px 0px white;
+}
+
+div.bg-pink {
+    background-color: rgba(255, 192, 203, 0.9);
+    text-shadow: 2px 2px 10px rgb(170, 170, 170);
+    font-size: 1.2rem;
+    margin-top: 100px !important;
+    box-shadow: 0 0 15px 1px black;
+    font-weight: bold;
+}
+
+.move-to-middle {
+    /* display: flex !important; */
+    width: 100%;
 }
