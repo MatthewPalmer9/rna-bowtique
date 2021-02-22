@@ -1,10 +1,19 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
+import { connect } from 'react-redux';
 import '../styles/navbar.css';
 
-export default function Navbar() {
+export function Navbar(props) {
 
     let history = useHistory();
+    // Grabs length of cart
+    let numberOfItemsInCart = props.cart.length;
+
+    // Grabs total price 
+    let total = 0;
+    let totalCost = props.cart.map(product => {
+        total += product.price
+    });
 
     const redirectToShop = e => {
         e.preventDefault();
@@ -27,7 +36,7 @@ export default function Navbar() {
                     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#">Shop</a>
+                                <a onClick={redirectToShop}className="nav-link active" aria-current="page" href="">Shop</a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#">Special Deals</a>
@@ -38,7 +47,8 @@ export default function Navbar() {
                         </ul>
                         <form className="d-flex">
                             <a className="nav-link" href="#">
-                                0 Items / $0.00
+                                {console.log("NAV PROPS", props)}
+                                {numberOfItemsInCart} Items / ${total}.00
                                 <i className="fas cart fa-shopping-cart"></i>
                             </a>
                         </form>
@@ -48,3 +58,11 @@ export default function Navbar() {
         </>
     )
 }
+
+const mapStateToProps = state => {
+    return {
+        cart: state.cart
+    }
+}
+
+export default connect(mapStateToProps)(Navbar)

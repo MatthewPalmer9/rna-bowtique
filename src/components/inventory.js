@@ -5,7 +5,7 @@ export const products = [
         src: "https://dummyimage.com/420x260",
         category: "placeholder",
         title: "placeholder",
-        price: 14
+        price: 15
     },
 
     {
@@ -13,7 +13,7 @@ export const products = [
         src: "https://dummyimage.com/420x260",
         category: "placeholder",
         title: "placeholder",
-        price: 14
+        price: 18
     },
 
     {
@@ -21,7 +21,7 @@ export const products = [
         src: "https://dummyimage.com/420x260",
         category: "placeholder",
         title: "placeholder",
-        price: 14
+        price: 24
     },
 
     {
@@ -29,7 +29,7 @@ export const products = [
         src: "https://dummyimage.com/420x260",
         category: "placeholder",
         title: "placeholder",
-        price: 14
+        price: 12
     },
 
     {
@@ -37,7 +37,7 @@ export const products = [
         src: "https://dummyimage.com/420x260",
         category: "placeholder",
         title: "placeholder",
-        price: 14
+        price: 16
     },
 
     {
@@ -45,7 +45,7 @@ export const products = [
         src: "https://dummyimage.com/420x260",
         category: "placeholder",
         title: "placeholder",
-        price: 14
+        price: 15
     },
 
     {
@@ -53,7 +53,7 @@ export const products = [
         src: "https://dummyimage.com/420x260",
         category: "placeholder",
         title: "placeholder",
-        price: 14
+        price: 20
     },
 
     {
@@ -61,7 +61,7 @@ export const products = [
         src: "https://dummyimage.com/420x260",
         category: "placeholder",
         title: "placeholder",
-        price: 14
+        price: 24
     },
 
     {
@@ -69,7 +69,7 @@ export const products = [
         src: "https://dummyimage.com/420x260",
         category: "placeholder",
         title: "placeholder",
-        price: 14
+        price: 30
     },
 
     {
@@ -77,7 +77,7 @@ export const products = [
         src: "https://dummyimage.com/420x260",
         category: "placeholder",
         title: "placeholder",
-        price: 14
+        price: 26
     },
 
     {
@@ -85,7 +85,7 @@ export const products = [
         src: "https://dummyimage.com/420x260",
         category: "placeholder",
         title: "placeholder",
-        price: 14
+        price: 12
     },
 
     {
@@ -93,7 +93,7 @@ export const products = [
         src: "https://dummyimage.com/420x260",
         category: "placeholder",
         title: "placeholder",
-        price: 14
+        price: 17
     },
 
     {
@@ -101,7 +101,7 @@ export const products = [
         src: "https://dummyimage.com/420x260",
         category: "placeholder",
         title: "placeholder",
-        price: 14
+        price: 19
     },
 
     {
@@ -109,7 +109,7 @@ export const products = [
         src: "https://dummyimage.com/420x260",
         category: "placeholder",
         title: "placeholder",
-        price: 14
+        price: 13
     }
 
 ];

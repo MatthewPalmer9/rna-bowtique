@@ -5,18 +5,7 @@ import '../styles/shop.css';
 import { connect } from 'react-redux';
 import { handleCart } from '../actions/handleCart.js';
 
-export default function Shop(props) {
-
-    const [cart, addToCart] = useState([])
-
-    const onAddToCart = e => {
-        if(!cart.includes(products[e.target.id - 1])) {
-            addToCart(state => [...state, products[e.target.id - 1]]);
-            e.target.disabled = true;
-        } else {
-            console.log("Already there.")
-        }
-    };
+export function Shop(props) {
 
     return (
         <div className="shop-container">
@@ -29,14 +18,20 @@ export default function Shop(props) {
                                     <ShopItem 
                                         key={index}
                                         product={product}
-                                        onAddToCart={onAddToCart}
                                     />
                             )
                         })};
-
                     </div>
                 </div>
             </section>
         </div>
     )
 }
+
+const mapStateToProps = state => {
+    return {
+        cart: state.cart
+    }
+}
+
+export default connect(mapStateToProps, {handleCart})(Shop)

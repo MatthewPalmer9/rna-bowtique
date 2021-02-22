@@ -1,7 +1,15 @@
-import React from 'react'
+import React from 'react';
+import { connect } from 'react-redux';
+import { handleCart } from '../actions/handleCart.js';
 
-export default function ShopItem(props) {
+export function ShopItem(props) {
     const {id, src, category, title, price} = props.product;
+
+    const handleAddToCart = e => {
+        e.preventDefault()
+        props.handleCart(props.product)
+        console.log(props)
+    }
 
     return (
         <>
@@ -14,8 +22,24 @@ export default function ShopItem(props) {
                     <h2 className="text-gray-900 title-font text-lg font-medium">{title}</h2>
                     <p className="mt-1">{`$` + price + `.00`}</p>
                 </div>
-                <button onClick={props.onAddToCart} id={id} className="cart-btn">Add to Cart</button>
+                <button onClick={handleAddToCart} id={id} className="cart-btn">Add to Cart</button>
             </div>
         </>
     )
 }
+
+const mapStateToProps = state => {
+    return {
+        cart: state.cart
+    }
+}
+
+const mapDispatchToProps = dispatch => {
+    return {
+        handleCart: (product) => {
+            dispatch(handleCart(product))
+        }
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(ShopItem)
