@@ -1,8 +1,8 @@
-const manageProducts = (state={products: []}, action) => {
+const manageProducts = (state={ cart: [] }, action) => {
     switch(action.type) {
-        case 'RENDER_PRODUCTS':
+        case 'ADD_TO_CART':
             return {
-                ...state, products: action.payload
+                ...state, cart: action.payload
             }
         default:
             return state

@@ -21,7 +21,7 @@ function App(props) {
 
             {/* Shop Page */}
             <Route exact path="/shop" render={props => (
-              <Shop 
+              <Shop
                 {...props}
               />
             )} />

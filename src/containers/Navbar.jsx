@@ -25,21 +25,21 @@ export default function Navbar() {
                         <span className="white-icon navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Shop</a>
+                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li className="nav-item">
+                                <a className="nav-link active" aria-current="page" href="#">Shop</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Special Deals</a>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">Special Deals</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact Us</a>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">Contact Us</a>
                             </li>
                         </ul>
                         <form className="d-flex">
                             <a className="nav-link" href="#">
                                 0 Items / $0.00
-                                <i class="fas cart fa-shopping-cart"></i>
+                                <i className="fas cart fa-shopping-cart"></i>
                             </a>
                         </form>
                     </div>
